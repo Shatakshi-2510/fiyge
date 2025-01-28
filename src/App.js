@@ -4,7 +4,7 @@ import './assests/css/App.css'
 import './assests/css/Sentiment.css'
 
 function App() {
-	const [text, setText] = useState("")
+	const [text, setText] = useState("") // use state for textarea
 	
 	const handleSubmit = async (e) => {
 		e.preventDefault()
