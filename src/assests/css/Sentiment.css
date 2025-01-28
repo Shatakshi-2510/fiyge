@@ -71,6 +71,29 @@
     background-color: #1d4ed8;
 }
 
+/* Result Section */
+.dashboard-result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.result-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #374151;
+}
+
+.result-item {
+    font-size: 1rem;
+    color: #4b5563;
+    margin: 5px 0;
+}
+
 /* Footer */
 .dashboard-footer {
     margin-top: 30px;
