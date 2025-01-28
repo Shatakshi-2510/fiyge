@@ -9,6 +9,7 @@ This is a full-stack Sentiment Analysis application for FIYGE Research that pred
 ### Clone the Repository
 
 git clone https://github.com/Shatakshi-2510/fiyge.git
+
 cd sentiment-analysis-app
 
 ### Set Up the Backend
