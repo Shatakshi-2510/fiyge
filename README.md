@@ -48,13 +48,21 @@ Start the Frontend: npm start
 ## Architecture
 
 /frontend
+
 ├── backend
+
 ├── src/
+
 ├ ├── API
+
 │ ├── App.js
+
 │ ├── Assets/
+
 │ │ └── css
+
 ├── package.json
+
 └── README.md
 
 FRONTEND (React App) -> BACKEND (Node.js with Express)
