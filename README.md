@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Sentiment Analysis Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+This is a full-stack Sentiment Analysis application for FIYGE Research that predicts the sentiment that is (Positive, Neutral, or Negative) of a given text. The application uses a React frontend to get user input and Node.js backend with Huggingface Transformers to display results.
 
-In the project directory, you can run:
+## Installation and Setup Steps
 
-### `npm start`
+### Clone the Repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+git clone https://github.com/Shatakshi-2510/fiyge.git
+cd sentiment-analysis-app
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Set Up the Backend
 
-### `npm test`
+cd backend
+npm install
+node server.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Set Up the Frontend
 
-### `npm run build`
+cd frontend
+npm install
+npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Access the Application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Open your browser and navigate to http://localhost:3000
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## API Endpoint Details
 
-### `npm run eject`
+### POST /analyze
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+URL: http://localhost:5003/api/analyze/
+Method: POST
+Request Body: { text }
+Response: {
+"sentiment": "POSITIVE",
+"confidence": 0.999
+}
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Run the Application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Start the Backend: node server.js
+Start the Frontend: npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Architecture
 
-## Learn More
+/frontend
+├── backend
+├── src/
+├ ├── API
+│ ├── App.js
+│ ├── Assets/
+│ │ └── css
+├── package.json
+└── README.md
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+FRONTEND (React App) -> BACKEND (Node.js with Express)
