@@ -10,18 +10,21 @@ This is a full-stack Sentiment Analysis application for FIYGE Research that pred
 
 git clone https://github.com/Shatakshi-2510/fiyge.git
 
-cd sentiment-analysis-app
 
 ### Set Up the Backend
 
 cd backend
+
 npm install
+
 node server.js
 
 ### Set Up the Frontend
 
 cd frontend
+
 npm install
+
 npm start
 
 ### Access the Application
@@ -33,16 +36,22 @@ Open your browser and navigate to http://localhost:3000
 ### POST /analyze
 
 URL: http://localhost:5003/api/analyze/
+
 Method: POST
+
 Request Body: { text }
+
 Response: {
+
 "sentiment": "POSITIVE",
+
 "confidence": 0.999
 }
 
 ## Run the Application
 
 Start the Backend: node server.js
+
 Start the Frontend: npm start
 
 ## Architecture
