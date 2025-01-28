@@ -1,0 +1,74 @@
+.dashboard-container {
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+  
+/* Card */
+.dashboard-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Title */
+.dashboard-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+/* Form */
+.dashboard-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Textarea */
+.dashboard-textarea {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+
+.dashboard-textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* Button */
+.dashboard-button {
+    padding: 12px 20px;
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dashboard-button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Footer */
+.dashboard-footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #9ca3af;
+}
