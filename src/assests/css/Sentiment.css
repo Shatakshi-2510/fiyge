@@ -62,6 +62,11 @@
     cursor: pointer;
 }
 
+.dashboard-button.disabled {
+    background-color: #93c5fd;
+    cursor: not-allowed;
+}
+
 .dashboard-button:hover {
     background-color: #1d4ed8;
 }
